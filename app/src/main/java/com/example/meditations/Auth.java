@@ -26,12 +26,15 @@ import com.google.android.gms.tasks.OnSuccessListener;
 public class Auth extends AppCompatActivity {
     private SignInClient oneTapClient;
     private BeginSignInRequest signInRequest;
+    public Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_auth);
         getSupportActionBar().hide();
+
+        context = getApplicationContext();
 
         WebView webView = findViewById(R.id.auth_wv);
         WebSettings webSettings = webView.getSettings();

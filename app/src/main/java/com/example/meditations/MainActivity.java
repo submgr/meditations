@@ -29,7 +29,8 @@ public class MainActivity extends AppCompatActivity {
                 SharedPreferences preferences = getSharedPreferences("app_data", 0);
 
                 String value = preferences.getString("usage_state",null);
-                if (value != null) {
+                //if (value != null) {
+                if(1 < 2){
                     // the key does not exist
                     startActivity(new Intent(MainActivity.this, WelcomeScreen.class));
                 } else {
