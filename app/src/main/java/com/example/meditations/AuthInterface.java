@@ -17,4 +17,9 @@ public class AuthInterface extends Auth{
         Toast.makeText(mContext, toast, Toast.LENGTH_LONG).show();
         mContext.startActivity(new Intent(mContext, HomeScreen.class));
     }
+
+    @JavascriptInterface
+    public void init__SettingsCenter(){
+        mContext.startActivity(new Intent(mContext, SettingsCenter.class));
+    }
 }
