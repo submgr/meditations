@@ -33,10 +33,10 @@ public class MainActivity extends AppCompatActivity {
                     // the key does not exist
                     startActivity(new Intent(MainActivity.this, WelcomeScreen.class));
                 } else {
-                    // handle the value
-                    Toast toast = Toast.makeText(getApplicationContext(),
-                            "[DEBUG]: welcome page was passed before", Toast.LENGTH_SHORT);
-                    toast.show();
+                    //Toast toast = Toast.makeText(getApplicationContext(),
+                    //        "[DEBUG]: welcome page was passed before", Toast.LENGTH_SHORT);
+                    //toast.show();
+                    startActivity(new Intent(MainActivity.this, MeditationsPlay.class));
                 }
             }
         }, 3000);
